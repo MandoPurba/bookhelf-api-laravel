@@ -24,41 +24,38 @@ DB_PASSWORD= //password database anda
 > jalankan aplikasi di lokal server dengan perintah `php artisan serve` di terminal
 
 ## Pengujian di Postman
-> Ambil data
+> ### 1. Ambil data
 > Method: GET <br>
 > URL: http:localhost:8000/api/book
->
-> Tambah data
+
+> ### 2. Tambah data
 > Method: POST <br>
 > URL: http:localhost:8000/api/book
-> ```
-    {
-        "title": "Laravel 2",
-        "year": 2020,
-        "author": "Mando Purba",
-        "summary": "rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu",
-        "publisher": "SayaSendiri",
-        "page_count": 120,
-        "read_page": 1,
-        "reading": 0
-    }
-  ```
-> Update data
-> Method: PUT<br
+> ```{
+>       "title": "Laravel 2",
+>       "year": 2020,
+>       "author": "Mando Purba",
+>       "summary": "rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu",
+>       "publisher": "SayaSendiri",
+>       "page_count": 120,
+>       "read_page": 1,
+>       "reading": 0
+>   }```
+    
+> ### 3. Update data
+> Method: PUT<br>
 > URL: http:localhost:8000/api/books/<i>{id_buku}</i>
-> ```
-    {
-        "title": "Laravel 2 update",
-        "year": 2020,
-        "author": "Mando Purba",
-        "summary": "rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu",
-        "publisher": "SayaSendiri",
-        "page_count": 120,
-        "read_page": 1,
-        "reading": 0
-    }
-  ```
->
-> Delete data
+> ```{
+>       "title": "Laravel 2 update",
+>       "year": 2020,
+>       "author": "Mando Purba",
+>       "summary": "rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu",
+>       "publisher": "SayaSendiri",
+>       "page_count": 120,
+>       "read_page": 1,
+>       "reading": 0
+>   }```
+
+> ### 4. Delete data
 > Method: DELETE
 > URL: http:localhost:8000/api/books/<i>{id_buku}</i>
